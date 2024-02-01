@@ -13,7 +13,7 @@ const fibIterative = (n) => {
   return arr;
 };
 
-// console.log(fibIterative(8)); [0, 1,  1,  3, 5, 7, 9, 11, 13]
+console.log(fibIterative(8)); [0, 1,  1,  3, 5, 7, 9, 11, 13]
 
 const fibRecursive = (n) => {
   if (n <= 1) {
@@ -28,15 +28,5 @@ const fibRecursive = (n) => {
   return a;
 };
 
-// console.log(fibRecursive(8)); [0, 1,  1,  3, 5, 7, 9, 11, 13]
+console.log(fibRecursive(8)); [0, 1,  1,  3, 5, 7, 9, 11, 13]
 
-const mergeSort = (arr, low, high) => {
-  if (low >= high) return;
-  const mid = (low + high) / 2;
-  const left = arr.slice(0, mid);
-  const right = arr.slice(mid+1, high);
-
-  console.log(left, right);
-};
-
-console.log(mergeSort([3, 2, 1, 13, 8, 5, 0, 1]));
